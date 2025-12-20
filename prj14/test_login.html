@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Add Numbers</title>
+</head>
+<body>
+
+<h2>Login</h2>
+<form id="loginForm">
+    Username: <input type="text" id="username"><br><br>
+    Password: <input type="password" id="password"><br><br>
+    <button type="submit">Login</button>
+</form>
+
+<div id="loginResult"></div>
+
+<hr>
+
+<!-- فرم جمع دو عدد، فقط بعد از Login نمایش داده می‌شود -->
+<div id="addNumbersSection" style="display:none;">
+    <h2>Enter Two Numbers</h2>
+    X: <input type="number" id="x"><br><br>
+    Y: <input type="number" id="y"><br><br>
+    <button id="addBtn">Calculate Sum</button>
+    <div id="addResult"></div>
+</div>
+
+<script>
+let token = "";
+
+// Login
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    fetch("/Login/", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            username: document.getElementById("username").value,
+            password: document.getElementById("password").value
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("loginResult").innerText = JSON.stringify(data);
+
+        if(data.status === "success"){
+            token = data.token;
+            document.getElementById("addNumbersSection").style.display = "block";
+        } else {
+            token = "";
+            document.getElementById("addNumbersSection").style.display = "none";
+        }
+    });
+});
+
+// Add Numbers
+document.getElementById("addBtn").addEventListener("click", function(){
+    const x = Number(document.getElementById("x").value);
+    const y = Number(document.getElementById("y").value);
+
+    if(token === ""){
+        alert("You must login first!");
+        return;
+    }
+
+    fetch("/AddNumbers/", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": token
+        },
+        body: JSON.stringify({x: x, y: y})
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("addResult").innerText = "Sum: " + data.sum;
+    });
+});
+</script>
+
+</body>
+</html>
