@@ -1,0 +1,220 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\controllers\\geocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\controllers\\geocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WebApplication22||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\models\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\models\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\models\\triangledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\models\\triangledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\models\\trianglecalculations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\models\\trianglecalculations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\global.asax||{4D30FDB3-AB3E-4810-B6F2-64627BCCA384}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\global.asax||{4D30FDB3-AB3E-4810-B6F2-64627BCCA384}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pcban\\AppData\\Local\\Temp\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\webapplication22\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|solutionrelative:webapplication22\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication22\\Models\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCB8F2D0-0B08-4DF4-A08D-F3395DDBB503}|WebApplication22\\WebApplication22.csproj|c:\\users\\pcban\\source\\repos\\webapplication22\\webapplication22\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|909d16b3-c8e8-43d1-a2b8-26ea0d4b6b57"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GeoController.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Controllers\\GeoController.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\Controllers\\GeoController.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Controllers\\GeoController.cs",
+              "RelativeToolTip": "WebApplication22\\Controllers\\GeoController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAA0wFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T10:30:57.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "WebApplication22\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T10:31:36.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Global.asax.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Global.asax.cs",
+              "RelativeToolTip": "WebApplication22\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T10:31:50.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\App_Start\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\App_Start\\SwaggerConfig.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\App_Start\\SwaggerConfig.cs",
+              "RelativeToolTip": "WebApplication22\\App_Start\\SwaggerConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T10:41:27.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebApplication22",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\WebApplication22.csproj",
+              "RelativeDocumentMoniker": "WebApplication22\\WebApplication22.csproj",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\WebApplication22.csproj",
+              "RelativeToolTip": "WebApplication22\\WebApplication22.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-04T11:38:24.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Triangle.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\Triangle.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\Models\\Triangle.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\Triangle.cs",
+              "RelativeToolTip": "WebApplication22\\Models\\Triangle.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T08:58:18.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TriangleCalculations.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\TriangleCalculations.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\Models\\TriangleCalculations.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\TriangleCalculations.cs",
+              "RelativeToolTip": "WebApplication22\\Models\\TriangleCalculations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T08:58:59.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TriangleData.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\TriangleData.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\Models\\TriangleData.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\TriangleData.cs",
+              "RelativeToolTip": "WebApplication22\\Models\\TriangleData.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T11:27:35.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\Class1.cs",
+              "RelativeDocumentMoniker": "WebApplication22\\Models\\Class1.cs",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Models\\Class1.cs",
+              "RelativeToolTip": "WebApplication22\\Models\\Class1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T10:27:20.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Global.asax",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Global.asax",
+              "RelativeDocumentMoniker": "WebApplication22\\Global.asax",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Global.asax",
+              "RelativeToolTip": "WebApplication22\\Global.asax",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000179|",
+              "WhenOpened": "2025-12-04T11:32:35.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\Pcban\\AppData\\Local\\Temp\\readme.txt",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\readme.txt",
+              "ToolTip": "C:\\Users\\Pcban\\AppData\\Local\\Temp\\readme.txt",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\readme.txt",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-04T10:30:57.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Web.config",
+              "RelativeDocumentMoniker": "WebApplication22\\Web.config",
+              "ToolTip": "C:\\Users\\Pcban\\source\\repos\\WebApplication22\\WebApplication22\\Web.config",
+              "RelativeToolTip": "WebApplication22\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-04T10:30:57.035Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
