@@ -4,6 +4,6 @@ import WAPI.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
     path('Login/', WAPI.views.Login),
+    path('AddNumbers/', WAPI.views.AddNumbers),
 ]

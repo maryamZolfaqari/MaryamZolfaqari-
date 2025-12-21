@@ -11,6 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('Login/', views.Login),
     path('', home),
+    
     # path('Login/', views.login_view, name='login'),
 ]
 
