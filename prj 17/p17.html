@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>محاسبه محیط مثلث</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Vazirmatn', sans-serif;
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        padding: 50px 40px;
+        width: 400px;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #fff;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        font-size: 24px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        background: rgba(255,255,255,0.75);
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+    input:focus {
+        box-shadow: 0 0 15px rgba(255,182,193,0.7);
+        background: rgba(255,255,255,0.95);
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 25px rgba(255,182,193,0.5);
+    }
+    button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 14px 30px rgba(255,182,193,0.6);
+    }
+
+    .result {
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffe4e1;
+        font-size: 18px;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h2>محاسبه محیط مثلث</h2>
+    <form id="triangleForm">
+        <label>طول ضلع a:</label>
+        <input type="number" id="sideA" step="0.01" placeholder="مثلاً 5" required>
+        <label>طول ضلع b:</label>
+        <input type="number" id="sideB" step="0.01" placeholder="مثلاً 6" required>
+        <label>طول ضلع c:</label>
+        <input type="number" id="sideC" step="0.01" placeholder="مثلاً 7" required>
+        <button type="submit">محاسبه محیط</button>
+        <div id="triangleResult" class="result"></div>
+    </form>
+</div>
+
+<script>
+document.getElementById('triangleForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    const lat1 = parseFloat(document.getElementById('sideA').value);
+    const lon1 = 0; // فرضی
+    const lat2 = parseFloat(document.getElementById('sideB').value);
+    const lon2 = 0; // فرضی
+    const lat3 = parseFloat(document.getElementById('sideC').value);
+    const lon3 = 0; // فرضی
+
+    const soapBody = `
+    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tri="http://example.org/triangle">
+      <soap:Body>
+        <tri:Perimeter>
+          <lat1>${lat1}</lat1>
+          <lon1>${lon1}</lon1>
+          <lat2>${lat2}</lat2>
+          <lon2>${lon2}</lon2>
+          <lat3>${lat3}</lat3>
+          <lon3>${lon3}</lon3>
+          <unit>meters</unit>
+        </tri:Perimeter>
+      </soap:Body>
+    </soap:Envelope>`;
+
+    try {
+        const response = await fetch('http://127.0.0.1:8000/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/xml; charset=utf-8',
+                'SOAPAction': 'http://example.org/triangle/Perimeter'
+            },
+            body: soapBody
+        });
+
+        const text = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(text, "text/xml");
+        const perimeter = xmlDoc.getElementsByTagName("Perimeter")[0].textContent;
+
+        document.getElementById('triangleResult').innerText = `محیط مثلث: ${perimeter}`;
+    } catch (error) {
+        console.error(error);
+        document.getElementById('triangleResult').innerText = "خطا در فراخوانی سرویس. مطمئن شوید که سرویس SOAP اجراست.";
+    }
+});
+</script>
+
+</body>
+</html>
