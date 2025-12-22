@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="994d4dac-4792-4086-9dc9-eeed0bd512ed" activeEnvironment="Default" name="TriangleService" resourceRoot="" soapui-version="5.9.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5dcceaa4-7164-4f9b-8f06-11f7644cb79f" wsaVersion="NONE" name="TriangleServiceBinding" type="wsdl" bindingName="{http://example.org/triangle}TriangleServiceBinding" soapVersion="1_1" anonymous="optional" definition="http://127.0.0.1:8000/?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://127.0.0.1:8000/?wsdl"><con:part><con:url>http://127.0.0.1:8000/?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="TriangleService" targetNamespace="http://example.org/triangle" xmlns:tns="http://example.org/triangle" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation/>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://example.org/triangle" elementFormDefault="qualified">
+      <xsd:element name="Perimeter">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="lat1" type="xsd:float"/>
+            <xsd:element name="lon1" type="xsd:float"/>
+            <xsd:element name="lat2" type="xsd:float"/>
+            <xsd:element name="lon2" type="xsd:float"/>
+            <xsd:element name="lat3" type="xsd:float"/>
+            <xsd:element name="lon3" type="xsd:float"/>
+            <xsd:element name="unit" type="xsd:string"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="PerimeterResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="Perimeter" type="xsd:float"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PerimeterInput">
+    <wsdl:part name="parameters" element="tns:Perimeter"/>
+  </wsdl:message>
+  <wsdl:message name="PerimeterOutput">
+    <wsdl:part name="parameters" element="tns:PerimeterResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="TriangleServicePortType">
+    <wsdl:operation name="Perimeter">
+      <wsdl:input message="tns:PerimeterInput"/>
+      <wsdl:output message="tns:PerimeterOutput"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TriangleServiceBinding" type="tns:TriangleServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Perimeter">
+      <soap:operation soapAction="http://127.0.0.1:8000/Perimeter" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TriangleServiceService">
+    <wsdl:documentation/>
+    <wsdl:port name="TriangleService" binding="tns:TriangleServiceBinding">
+      <soap:address location="http://127.0.0.1:8000/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://127.0.0.1:8000/</con:endpoint></con:endpoints><con:operation id="d551f7ac-6d15-4e77-ac6c-4776c082cd1a" isOneWay="false" action="http://127.0.0.1:8000/Perimeter" name="Perimeter" bindingOperationName="Perimeter" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="69b765a0-5079-46eb-870e-321a575493b8" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:8000/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tri="http://example.org/triangle">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tri:Perimeter>\r
+         <!--You may enter the following 7 items in any order-->\r
+        <lat1>35.6892</lat1>
+         <lon1>51.3890</lon1>
+         <lat2>35.7000</lat2>
+         <lon2>51.4000</lon2>
+         <lat3>35.6800</lat3>
+         <lon3>51.4100</lon3>
+         <unit>meters</unit>\r
+      </tri:Perimeter>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://127.0.0.1:8000/Perimeter"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
